@@ -1,0 +1,196 @@
+body {
+    background-image: url("skiing.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+    min-height: 100vh;
+}
+.top,.control {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px
+}
+h1 {
+    font-size: 60px;
+    font-family: 'Cinzel', serif;
+    margin:0;
+}
+.heading {
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(
+        82.3deg,
+        rgba(150, 93, 233, 1) 10.8%,
+        rgba(99, 88, 238, 1) 94.3%
+    );;
+    max-width: 600px;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    padding: 16px 20px;
+    color: #fff;
+    letter-spacing: 1.2px;
+    overflow: hidden;
+}
+
+.heading .animation {
+border-radius: 100%;
+animation: ripple 0.6s linear infinite;
+}
+
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+    }
+
+    100% {
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+    }
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card {
+    margin: 20px;
+    padding: 20px;
+    width: 170px;
+    height: 230px;
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px #bebebe,
+                -15px -15px 30px #ffffff;
+}
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+.days,.hours,.minutes,.seconds {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+}
+.animate {
+    font-family: 'Cinzel', serif;
+    font-size: 60px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    animation: blur .75s ease-out infinite;
+    text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+
+@keyframes blur {
+    from {
+        text-shadow:0px 0px 10px #fff,
+        0px 0px 10px #fff, 
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 50px #fff,
+        0px 0px 50px #fff,
+        0px 0px 50px #7B96B8,
+        0px 0px 150px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px -10px 100px #7B96B8,
+        0px -10px 100px #7B96B8;
+    }
+}
+
+.button {
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #3d3a4e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.play {
+    background: linear-gradient(
+        82.3deg,
+        rgba(150, 93, 233, 1) 10.8%,
+        rgba(99, 88, 238, 1) 94.3%
+    );
+}
+
+.pause {
+background-color: grey; 
+}
+
+.button:disabled {
+opacity: 0.5; 
+cursor: not-allowed; 
+}
+
+@media all and (max-width: 1040px) {
+    .card {
+        padding: 10px;
+        width: 160px;
+        height: 260px;
+        border-radius: 30px;
+        background: #e0e0e0;
+        box-shadow: 15px 15px 30px #bebebe,
+                    -15px -15px 30px #ffffff;
+    }
+}
+@media all and (max-width: 800px) {
+    h1 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 18px;
+        margin: 10px;
+    }
+    .days,.hours,.minutes,.seconds {
+        font-size: 30px;
+        margin: 10px;
+    }
+    .card {
+        padding: 10px;
+        width: 100px;
+        height: 120px;
+        border-radius: 30px;
+        background: #e0e0e0;
+        box-shadow: 15px 15px 30px #bebebe,
+                    -15px -15px 30px #ffffff;
+    }
+}
+@media all and (max-width: 500px) {
+    h1 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 15px;
+        margin: 5px;
+    }
+    .days,.hours,.minutes,.seconds {
+        font-size: 20px;
+        margin: 5px;
+    }
+    .card {
+        padding: 10px;
+        width: 100px;
+        height: 70px;
+        border-radius: 30px;
+        background: #e0e0e0;
+        box-shadow: 15px 15px 30px #bebebe,
+                    -15px -15px 30px #ffffff;
+    }
+}

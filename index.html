@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Next Ski Trip</title>
+        <link rel="icon" href="data:,">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?&family=Montserrat:wght@400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Staatliches&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <audio id ="myAudio" src="song.mp3" loop="loop" autoplay="allowed"></audio>
+        <div class="top">
+            <div class="heading">
+                <i class="animation"></i><h1>Next Ski Trip</h1><i class="animation"></i>
+            </div>
+        </div>
+        <div class = "control">
+            <button class ="button play"><span class="button-content">Play </span></button>
+            <button class ="button pause"><span class="button-content">Pause </span> </button>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="block">
+                    <h4 class="days"></h4>
+                    <h3>DAYS</h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="block">
+                    <h4 class="hours"></h4>
+                    <h3>HOURS</h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="block">
+                    <h4 class="minutes"></h4>
+                    <h3>MINUTES</h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="block">
+                    <h4 class="seconds"></h4>
+                    <h3>SECONDS</h3>
+                </div>
+            </div>
+        </div>
+        <p id="par"></p>
+        <script src="index.js"></script>
+    </body>
+</html>
